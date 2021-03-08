@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Crimson Text', serif;
+    background: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width: 400px;
+    border-radius: 20px;
+}
+.card{
+    border-radius: 20px;
+    height: 600px;
+    background-image: linear-gradient(to right, #0fbcf9, #18dcff);
+    overflow: hidden;
+    border: none;
+    box-shadow: 0px 5px 8px #414141;
+    box-sizing: border-box;
+    z-index: 0;
+}
+.circle{
+    position: absolute;
+    bottom: -230px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    clip-path: circle(50%);
+    height: 700px;
+    width: 700px;
+    z-index: -1;
+    overflow: hidden;
+}
+.myHead{
+    margin-top: 30px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to right, #0fbcf9, #18dcff);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.log-icon{
+    font-size: 40px;
+}
+.in_icon{
+    position: relative;
+    display: block;
+    left: -87px;
+    top: 30px;
+    color: rgb(255,255,255);
+}
+.button{
+    width: 250px;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #0fbcf9, #18dcff);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+.myInput{
+    width: 220px;
+    padding: 10px;
+    padding-left: 40px;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #0fbcf9, #18dcff);
+    color: #fff;
+    border: none;
+    display: block;
+}
+.myInput::placeholder{
+    color: #fff;
+    opacity: 0.6;
+}
+.myInput:focus{
+   border: none;
+   outline: none;
+}
+.check_1{
+    font-size: 13px;
+    color: rgb(85,85,85);
+    margin: 15px auto;
+    cursor: pointer;
+}
+.red{
+    color: red;
+}
+
+@media screen and (max-width:768px){
+    .container{
+        max-width: 100%;
+    }
+}
